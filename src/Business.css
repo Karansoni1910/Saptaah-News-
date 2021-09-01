@@ -1,0 +1,134 @@
+.logo > img{
+    width: 12vw;
+    height: inherit;
+}
+.header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.header > h2{
+    margin: 0;
+    padding-left: 1vw;
+}
+.back_arrow{
+    margin-left: 5vw;
+    margin-top: 1px;
+    width: 2vw !important;
+    height: 2vw !important;
+}
+.bg_image{
+    position: relative;
+    text-align: center;
+    color: white;
+    
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 40px;
+}
+.text{
+    background-image: linear-gradient(180deg, transparent, rgb(63, 63, 63));
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.images{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.image{
+    position: relative;
+}
+.busy_content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.top_image{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 5vh;
+    width: 90vw;
+}
+.top_image > img{
+    width: 100%;
+    border-radius: 30px;
+}
+.top_text{
+    background-image: linear-gradient(180deg, transparent,  rgb(0, 0, 0));
+    position: absolute;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+}
+.bg_image > img{
+    border-radius: 30px;
+}
+@media screen and (max-width: 900px){
+    .logo > img{
+        width: 40vw;
+    }
+    .back_arrow{
+        margin-left: 8vw;
+        width: 6vw !important;
+        height: 6vw !important;
+    }
+    .header > h2{
+        padding-left: 3vw;
+        padding-top: 3px;
+    }
+    .busy_content{
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .top_image{
+        position: absolute;
+        color: white;
+        margin-top: 2vh;
+        width: 100%;
+    }
+    .top_image > img{
+        width: 80%;
+    }
+    .images{
+        grid-template-columns: repeat(1,auto);
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+    }
+    .image{
+        position: relative;
+    }
+    .bg_image > img{
+        width: 80vw;
+        object-fit: contain;
+        border-radius:20px;
+    }
+    .bg_image{
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: 20px;
+    }
+    .text{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .top_text{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 80%;
+    }
+}
